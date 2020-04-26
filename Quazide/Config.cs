@@ -5,7 +5,6 @@ using Newtonsoft.Json;
 
 namespace Quazide
 {
-	// Token: 0x02000003 RID: 3
 	public class Config
 	{
 
@@ -30,7 +29,6 @@ namespace Quazide
 		[JsonProperty("cmd_whitelist")]
 		public List<ulong> CmdWhitelist { get; private set; }
 
-		// Token: 0x0600001A RID: 26 RVA: 0x0000278F File Offset: 0x0000098F
 		public static Config Load()
 		{
 			return JsonConvert.DeserializeObject<Config>(File.ReadAllText("Config.json"));
